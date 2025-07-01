@@ -1,4 +1,4 @@
-/* Reset simples para consistência */
+/* Reset simples */
 * {
   margin: 0;
   padding: 0;
@@ -12,13 +12,13 @@ body {
                     radial-gradient(white 1px, transparent 1px);
   background-size: 40px 40px;
   background-position: 0 0, 20px 20px;
-  color: #333;
+  color: #fff;
   line-height: 1.6;
   min-height: 100vh;
   padding: 20px;
 }
 
-/* Header */
+/* Header centralizado */
 header {
   display: flex;
   justify-content: center;
@@ -32,11 +32,11 @@ header img {
   width: auto;
 }
 
-/* Container com degrade */
+/* Container com degrade azul-verde */
 .container {
   max-width: 900px;
   margin: 30px auto;
-  background: linear-gradient(135deg, #006d77, #83c5be);
+  background: linear-gradient(135deg, #005f73, #0a9396);
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.4);
@@ -82,12 +82,12 @@ a:hover {
   height: 100%;
 }
 
-/* Responsividade extra */
+/* Responsividade */
 @media (max-width: 600px) {
   h1 {
     font-size: 1.5em;
   }
-  
+
   .container {
     padding: 20px;
   }
