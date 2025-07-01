@@ -7,27 +7,46 @@
 
 body {
   font-family: Arial, sans-serif;
-  /* degrade suave azul → verde */
-  background: linear-gradient(135deg, #b2f0ff, #b2ffd0);
+  background-color: #000b33;
+  background-image: radial-gradient(white 1px, transparent 1px),
+                    radial-gradient(white 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
   color: #333;
   line-height: 1.6;
-  padding: 20px;
   min-height: 100vh;
+  padding: 20px;
 }
 
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+header img {
+  max-height: 80px;
+  height: auto;
+  width: auto;
+}
+
+/* Container com degrade */
 .container {
   max-width: 900px;
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.85);
+  margin: 30px auto;
+  background: linear-gradient(135deg, #006d77, #83c5be);
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  color: #fff;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #00747c;
+  color: #e0fbfc;
 }
 
 p {
@@ -37,7 +56,7 @@ p {
 }
 
 a {
-  color: #00747c;
+  color: #ffdd57;
   text-decoration: none;
   font-weight: bold;
 }
@@ -61,4 +80,19 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* Responsividade extra */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+
+  header img {
+    max-height: 50px;
+  }
 }
